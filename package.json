@@ -1,0 +1,12 @@
+{
+  "name": "coal-m",
+  "version": "0.0.1",
+  "main": "lib/index.coffee",
+  "dependencies": {
+    "mongoose": "^4.1.6",
+    "sload": "^0.1.3-rc4"
+  },
+  "devDependencies": {
+    "should": "^7.1.0"
+  }
+}
