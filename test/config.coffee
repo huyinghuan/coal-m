@@ -1,3 +1,5 @@
+_path = require 'path'
+
 module.exports =
   username: false
   password: false
@@ -5,4 +7,4 @@ module.exports =
   port: "27017"
   options: {}
   database: "testCoalM"
-  schema: "schema"
+  schema: _path.join(__dirname, "schema")

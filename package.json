@@ -2,6 +2,9 @@
   "name": "coal-m",
   "version": "0.0.1",
   "main": "lib/index.coffee",
+  "description": "simple package mongoose",
+  "author": "L.T_huyinghuan",
+  "homepage": "https://github.com/huyinghuan/slow-cli",
   "dependencies": {
     "mongoose": "^4.1.6",
     "sload": "^0.1.3-rc4"

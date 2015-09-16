@@ -17,7 +17,7 @@ class CoalM
     if username and password
       url = "mongodb://#{username}:#{password}@#{ip}:#{port}/#{database}"
     else
-      url = "mongodb://#{config.ip}:#{port}/#{database}"
+      url = "mongodb://#{ip}:#{port}/#{database}"
 
     options = @config.options or {}
 
@@ -29,8 +29,9 @@ class CoalM
     self = @
     for item in queue
       name = item.name
-      self.modelObject[name] = _mongoose(name, new _Schema(item.fields))
+      self.modelObject[name] = _mongoose.model(name, new _Schema(item.fields))
 
   model: (modalName)->
     @modelObject[modalName]
 
+module.exports = CoalM
